@@ -45,11 +45,6 @@ header {
     width: 140px;
 }
 
-#header-logo {
-    display: none;
-    width: 60px;
-}
-
 #header-nav {
     display: flex;
     align-items: center;
@@ -95,22 +90,24 @@ header {
         position: relative;
         width: calc(100% - 40px);
         height: 90px;
-        padding: 0px 28px 0px 18px;
+        padding: 0px 40px 0px 40px;
         border-radius: 100px;
         margin-top: 20px;
     }
-    #header-title {
-        display: none;
-    }
-    #header-logo {
-        display: block;
-    }
+
     #header-nav {
         position: absolute;
         top: 120px;
-        width: calc(100% - 40px);
-        flex-direction: column;
+        left: 0;
+        display: none;
+        flex-direction: column-reverse;
+        width: 100%;
     }
+
+    .hamburger-active #header-nav {
+        display: flex;
+    }
+
     #hamburger {
         display: flex;
     }
