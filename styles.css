@@ -85,6 +85,19 @@ header {
     height: 4px;
     background-color: #5500ff;
     border-radius: 10px;
+    transition: 0.1s;
+}
+
+.hamburger-active #hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger-active #hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-active #hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 @media screen and (max-width: 740px) {
@@ -130,4 +143,11 @@ header {
     #hamburger {
         display: flex;
     }
+}
+
+main h1 {
+    font-size: 70px;
+    font-weight: 900;
+    opacity: 0.5;
+    margin: 0;
 }
