@@ -3,11 +3,12 @@
 * {
     font-family: sans-serif;
     box-sizing: border-box;
+    cursor: default;
+    user-select: none;
 }
 
 a {
     all: unset;
-    cursor: pointer;
 }
 
 body {
@@ -100,7 +101,6 @@ header {
     align-items: center;
     justify-content: center;
     gap: 6px;
-    cursor: pointer;
 }
 
 #hamburger span {
