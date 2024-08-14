@@ -48,6 +48,7 @@ header {
 
 #header-title {
     height: 60px;
+    transition: 0.2s;
 }
 
 #header-nav {
@@ -57,25 +58,33 @@ header {
     gap: 40px;
 }
 
-#header-nav a {
+#header-nav a:not(:last-child) {
+    font-size: 17px;
     border-bottom: 0px solid transparent;
-    transition: 0.1s;
+    padding: 10px 0px;
+    transition: 0.2s;
 }
 
 #header-nav a:not(:last-child):hover {
+    color: #5500ff;
     border-bottom: 4px solid #5500ff;
 }
 
 #header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding: 12px 28px;
+    height: 50px;
+    width: 140px;
     background-color: #5500ff;
     border: 2px solid transparent;
     border-radius: 100px;
-    transition: 0.3s;
+    box-sizing: border-box;
+    transition: 0.2s;
 }
 
-#header-button:hover, #header-button:active {
+#header-button:hover {
     color: #5500ff;
     background-color: transparent;
     border: 2px solid #5500ff;
@@ -138,27 +147,40 @@ header {
         width: 100%;
         height: 70px;
         padding: 0px;
-        font-size: 20px;
         overflow: hidden;
         background-color: white;
         border-radius: 35px;
         box-shadow: 0px 6px 12px #00000000;
-        transition: 0.3s;
+        transition: 0.2s;
     }
 
     .hamburger-active #header-nav {
         top: 0px;
         display: flex;
-        height: 300px;
+        height: 380px;
         padding: 100px 0px 40px;
         box-shadow: 0px 6px 12px #00000011;
+    }
+
+    #header-nav a:not(:last-child) {
+        font-size: 20px;
+        border-bottom: 0px solid transparent;
+        padding: 10px 0px;
+        transition: 0.2s;
+    }
+
+    #header-nav a:not(:last-child):hover {
+        border-bottom: 0px solid transparent;
     }
 
     #hamburger {
         display: flex;
     }
-    #header-nav a:not(:last-child):hover {
-        border-bottom: 0;
+
+    #header-button {
+        font-size: 19px;
+        width: 180px;
+        height: 60px;
     }
 }
 
