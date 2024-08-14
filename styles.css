@@ -19,6 +19,7 @@ body {
 /* HEADER */
 
 header {
+    z-index: 3;
     position: fixed;
     display: flex;
     align-items: center;
@@ -42,7 +43,7 @@ header {
 }
 
 #header-title {
-    width: 140px;
+    height: 60px;
 }
 
 #header-nav {
@@ -76,6 +77,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 6px;
+    cursor: pointer;
 }
 
 #hamburger span {
@@ -89,23 +91,40 @@ header {
     #inner-header {
         position: relative;
         width: calc(100% - 40px);
-        height: 90px;
+        height: 70px;
         padding: 0px 30px 0px 30px;
         border-radius: 100px;
         margin-top: 20px;
     }
 
+    #header-title {
+        height: 42px;
+    }
+
     #header-nav {
+        z-index: -1;
         position: absolute;
-        top: 120px;
+        top: 0;
         left: 0;
-        display: none;
         flex-direction: column-reverse;
+        justify-content: flex-end;
         width: 100%;
+        height: 70px;
+        padding: 0px;
+        transition: 0.3s;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 35px;
+        box-shadow: 0px 6px 12px #00000000;
+
     }
 
     .hamburger-active #header-nav {
+        top: 0px;
         display: flex;
+        height: 300px;
+        padding: 100px 0px 40px;
+        box-shadow: 0px 6px 12px #00000011;
     }
 
     #hamburger {
