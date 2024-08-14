@@ -16,6 +16,12 @@ body {
     background-color: #eee;
 }
 
+button, a, input, [role="button"], [role="link"] {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    outline: none;
+}
+
 /* HEADER */
 
 header {
