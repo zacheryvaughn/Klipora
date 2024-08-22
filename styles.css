@@ -195,7 +195,7 @@ header {
     }
 
     #header-title {
-        height: 42px;
+        height: 36px;
     }
 
     #header-nav {
@@ -276,6 +276,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 240px;
+    text-wrap: nowrap;
     font-size: 14px;
     font-weight: 600;
     color: var(--primary);
@@ -354,7 +355,7 @@ main {
 
 @media (max-width: 860px) {
     main {
-        margin-top: 140px;
+        margin-top: 120px;
     }
 
     #hero {
